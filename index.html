@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body class="gridIndex">
@@ -32,13 +33,13 @@
 		<!-- gif de fondo de pantalla -->
 		<!-- inicio de nuevo album -->
 		<div class="tituloIndex">
-			<h3 class="titulos__paginas ">¡Nuevo Álbum!</h3>
+			<h3 class="titulos__paginas">¡Nuevo Álbum!</h3>
 		</div>
 		<div class="subtituloIndex">
 			<h4 class="subtitulos__paginas marginDiez">"Caminando hacia la nada"</h4>
 		</div>
 		<!-- portada del album -->
-		<div class="principal__nuevoAlbum__portada">
+		<div class="principal__nuevoAlbum__portada" data-aos="zoom-in">
 			<img class="principal__nuevoAlbum__portada__imagen" src="./assets/nuevoAlbum.jpg" alt="PortadaDisco">
 		</div>
 	</div>	
@@ -46,14 +47,14 @@
 	<!-- inicio de conciertos -->
 	<section class="conciertos">
 		<div class="titulo2Index">
-			<h3 class="titulos__paginas ">Conciertos</h3>
+			<h3 class="titulos__paginas">Conciertos</h3>
 		</div>
 		<div class="mapaTabla">
 		<!-- mapa -->
-		<div class="conciertos__mapa" border-width="10px">
+		<div class="conciertos__mapa" border-width="10px" data-aos="fade-up">
 			<iframe class="conciertos__mapa__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.079471822879!2d-58.37060498459193!3d-34.60215186492271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335325f19f9a3%3A0xfd34b93fba734a98!2sLuna%20Park!5e0!3m2!1ses-419!2sar!4v1635260690994!5m2!1ses-419!2sar" width="500" height="500" style="border:1" allowfullscreen="" loading="lazy"></iframe></div>
 		<!-- tabla con fechas y lugares -->
-		<div class="conciertos__fechasYLugares">
+		<div class="conciertos__fechasYLugares" data-aos="fade-up">
 			<table class="tablaIndex contenido__grande" border=30 cellpadding="6">
 				<tr>
 					<td>26 de Febrero</td>
@@ -101,5 +102,11 @@
 			</div>
 		</div>
 	</footer>
+<!--animaciones aos  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- fin animaciones aos -->
 </body>
 </html>
