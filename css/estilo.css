@@ -39,7 +39,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	padding: 40px;
-	background-color:rebeccapurple;
+	background-color:#730014;
 	align-items: center;
 }
 nav ul {
@@ -123,7 +123,7 @@ ul {
 	background-attachment: fixed;
 }
 section.conciertos {
-	background-color: darkred;
+	background-image: linear-gradient(#2D0003, #FF1F6A, #FF6BB0);
 }
 section.conciertos .titulo2Index {
 	display: flex;
@@ -181,7 +181,7 @@ footer {
 }
 .carrusel {
 	grid-area: carrusel;
-	background-color: darkblue;
+	background-image: linear-gradient(#00033A, #003CC5, #00B0FF);
 	display: flex;
 	justify-content: center;
 	padding: 60px;
@@ -202,7 +202,7 @@ footer {
 	background-attachment: fixed;
 }
 section.historia {
-	background-color: black;
+	background-image: linear-gradient(#00033A, #002792);
 	text-align: center;
 }
 .historia .titulos__paginas {
@@ -246,13 +246,13 @@ section.discos {
 }
 
 .tituloDiscos {
-	background-color: darkgreen;
+	background-color: #000600;
 	text-align: center;
 	padding: 20px;
 }
 
 .gridDiscos_Especifica {
-	background-color: darkgreen;
+	background-image:linear-gradient(#000600, #009700, #FFD524);
 	padding: 60px 100px 60px 20px;
 	display: grid;
 	gap: 20px;
@@ -313,7 +313,7 @@ section.discos {
 /* GALERIA */
 
 .gridGaleria {
-	background-color: chocolate;
+	background-image: linear-gradient(#FFD72E, #FFD873, #FFD7AA);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: 
