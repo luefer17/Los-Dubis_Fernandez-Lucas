@@ -1,8 +1,31 @@
+#navbarNav {
+	justify-content: end;
+} 
+
+iframe {
+	aspect-ratio: auto 500 / 500;
+}
+
+table {
+	background-color: transparent !important;
+}
+
+.rrss {
+	display: flex;
+}
+
+
+
+
+
 /* estilo para varias paginas */
+/* 
+
 * {
 	margin: 0px;
 }
 
+ */
 .titulo__sitio {
 	font-weight: 900;
 	font-size: 50px;
@@ -33,7 +56,7 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
-	background-color: whitesmoke;
+	background-color:gray;
 }
 footer {
 	display: flex;
@@ -42,22 +65,10 @@ footer {
 	background-color:#730014;
 	align-items: center;
 }
-nav ul {
-	display: flex;
-	justify-content: flex-end;
-	padding: 18px;
-}
 nav ul li {
 	padding: 0px 10px 0px 10px;
 }
-nav {
-	position: sticky;
-	top: 0px
-}
-header {
-	position: sticky;
-	top: 0px
-}
+
 header {
 	background-color:black;
 }
@@ -73,40 +84,20 @@ a:visited {
 ul {
 	list-style: none;
 }
+
 /* fin de estilo para varias paginas */
 
 
 
 
-
-/* INDEX */
-
-.principal__nuevoAlbum__portada__imagen {
-	width: 500px;
-	height: 500px;
+.imgAlbum {
 	border: black 10px solid;
 }
-.principal__nuevoAlbum__portada {
-	padding: 0px 0px 70px 0px;
-}
- .conciertos__mapa__iframe {
+.conciertos__mapa__iframe {
 	border: black 10px solid;
 }
-.tablaIndex {
-	background-color: white;
-}
-.conciertos__fechasYLugares {
-	padding: 125px 0px 0px 50px;
-}
-.tituloIndex {
-	padding: 10px;
-}
-.subtituloIndex {
-	padding: 10px;
-}
-.titulo2Index {
-	padding: 20px;
-}
+
+
 .principal {
 	display: flex;
 	flex-direction: column;
@@ -122,53 +113,22 @@ ul {
 	background-size: cover;
 	background-attachment: fixed;
 }
+.principal__nuevoAlbum__portada {
+	padding: 0px 0px 100px 0px;
+}
 section.conciertos {
 	background-image: linear-gradient(#2D0003, #FF1F6A, #FF6BB0);
 }
-section.conciertos .titulo2Index {
-	display: flex;
-	justify-content: center;
-}
 .mapaTabla {
-	display: flex;
-	justify-content: center;
 	padding: 0px 0px 50px 0px;
 } 
-
-/* CONFIG DE GRID */
-.gridIndex {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "logo nav nav"
-						 "principal principal principal"
-						 "conciertos conciertos conciertos"
-						 "footer footer footer"
-}
-header {
-	grid-area: logo;
-	padding: 0px 0px 0px 20px;
-}
-nav {
-	grid-area: nav;
-	background-color: black;
-}
-main {
-	grid-area: principal;
-}
-section.conciertos {
-	grid-area: conciertos;
-}
-footer {
-	grid-area: footer;
-}
-/* FIN CONFIG GRID */
 
 /* HISTORIA */
 
 .gridNosotros {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "logo nav nav"
+	grid-template-areas:
 	"texto texto texto"
 	"carrusel carrusel carrusel"
 	"footer footer footer"
@@ -395,14 +355,16 @@ footer {
 }
 
 
-/* FOOTER */
-
-
-
-
-.rrss a img {
+.rrss a {
 	padding: 10px;
 }
+/* FOOTER
+
+
+
+
+
+ */
 
 
 
@@ -423,14 +385,12 @@ footer {
 
 
 
+ 
 
+/* /* media querie !!!!!  */
 
-
-
-/* media querie !!!!! */
-
-@media only screen and (min-width: 0px) and (max-width: 768px){
-/* index */
+	@media only screen and (min-width: 0px) and (max-width: 768px){
+	/* /* index 
 	.gridIndex {
 		display: grid;
 		grid-template-areas:
@@ -508,15 +468,13 @@ footer {
 		flex-direction: column;
 		align-items: center;
 	}
-
-/* historia */
+ */
+	/* /* historia *  */
 	.gridNosotros {
 		display: grid;
-		grid-template-rows: 100px 100px 2000px 610px 100px;
+		grid-template-rows: 2000px 610px 100px;
 		grid-template-columns: 100%;
 		grid-template-areas: 
-		"logo" 
-		"nav"
 		"texto"
 		"carrusel"
 		"footer"
@@ -529,30 +487,11 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 	}
-	header {
-		grid-area: logo;
-	
-	}
-	nav {
-		grid-area: nav;
-	}
 	.texto {
 		grid-area: texto;
 		background-color: darkblue;
 		display: flex;
 		justify-content: center;
-	}
-	.carrusel {
-		grid-area: carrusel;
-		background-color: darkblue;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 30px;
-	}
-	.carrusel__foto {
-		width: 100%;
-		height: auto;
 	}
 	.parrafo {
 		width: 100%;
@@ -564,7 +503,7 @@ footer {
 		justify-content: flex-end;
 		align-items: center;
 		padding: 0px 70px 20px 70px;
-		height: 240vh;
+		height: 300vh;
 	}
 	.historiaGif {
 		background-image: url(../assets/19202.jpg);
@@ -580,7 +519,7 @@ footer {
 	.historia .titulos__paginas {
 		padding: 20px;
 	}
-/* discos */
+	/* discos *
 	.gridDiscos {
 		display: grid;
 		grid-template-columns: 100%;
@@ -629,7 +568,7 @@ footer {
 		padding: 10px;
 	}
 
-	/* galeria */
+	/* galeria *
 	.gridGaleria {
 		background-color: chocolate;
 		display: grid;
@@ -669,7 +608,7 @@ footer {
 		grid-area: footer;
 	}
 
-/* contacto */
+	/* contacto *
 
 
 	.gridContacto {
@@ -711,5 +650,6 @@ footer {
 	.formulario__fondo {
 		background-color: white;
 	}
+	*/
 
 }
