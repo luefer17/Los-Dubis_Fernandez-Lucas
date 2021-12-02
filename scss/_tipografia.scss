@@ -1,0 +1,25 @@
+// reglas para tipografia
+.titulo__sitio {
+	font-weight: 900;
+	font-size: 50px;
+}
+.titulos__paginas {
+	font-weight: 700;
+	font-size: 40px;
+	color: $NoTanBlanco
+}
+.subtitulos__paginas {
+	font-weight: 400;
+	font-size: 30px;
+	color: $NoTanBlanco
+}
+.contenido__grande {
+	font-weight: 700;
+	font-size: 20px;
+}
+.contenido__chico {
+	font-weight: 400;
+	font-size: 20px;
+	text-align: justify;
+	color: white;
+}

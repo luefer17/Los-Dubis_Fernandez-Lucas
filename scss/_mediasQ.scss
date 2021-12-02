@@ -1,0 +1,104 @@
+/* media querie !!!!! */
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	footer div a img {
+		width: 40px;
+		height: 40px;
+	}
+	.rrss {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.rrss a {
+		padding: 5px;
+	}
+	/* historia */
+	.gridNosotros {
+		display: grid;
+		grid-template-rows: 1fr 610px 100px;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"texto"
+		"carrusel"
+		"footer"
+	}
+	footer {
+		grid-area: footer;
+		padding: 0px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.texto {
+		grid-area: texto;
+		background-color: darkblue;
+		display: flex;
+		justify-content: center;
+	}
+	.parrafo {
+		width: 100%;
+		height: auto;
+	}
+	.historiaContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0px 70px 20px 70px;
+		height: 540vh;
+	}
+	.historiaGif {
+		background-image: url(../assets/19202.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	section.historia {
+		background-color: black;
+		text-align: center;
+	}
+	.historia .titulos__paginas {
+		padding: 20px;
+	}
+ /* discos */
+	.gridDiscos {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"disco"
+		"discos"
+		"footer";	
+	}
+	header {
+		grid-area: logo;
+	}
+	nav {
+		grid-area: nav;
+	}
+	section.discos {
+		grid-area: disco;
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.discos img {
+		padding: 10px;
+	}
+	main.discografia {
+		grid-area: discos;
+	}
+
+	.gridDiscos_Especifica {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 40px;
+	}
+	.gridDiscos_Especifica div img {
+		padding: 10px;
+	}
+}

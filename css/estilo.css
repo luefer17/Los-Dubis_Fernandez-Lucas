@@ -1,396 +1,352 @@
-/* estilo para varias paginas */
+/* media querie !!!!! */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  footer div a img {
+    width: 40px;
+    height: 40px; }
+  .rrss {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .rrss a {
+    padding: 5px; }
+  /* historia */
+  .gridNosotros {
+    display: grid;
+    grid-template-rows: 1fr 610px 100px;
+    grid-template-columns: 100%;
+    grid-template-areas: "texto" "carrusel" "footer"; }
+  footer {
+    grid-area: footer;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .texto {
+    grid-area: texto;
+    background-color: darkblue;
+    display: flex;
+    justify-content: center; }
+  .parrafo {
+    width: 100%;
+    height: auto; }
+  .historiaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 70px 20px 70px;
+    height: 540vh; }
+  .historiaGif {
+    background-image: url(../assets/19202.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
+  section.historia {
+    background-color: black;
+    text-align: center; }
+  .historia .titulos__paginas {
+    padding: 20px; }
+  /* discos */
+  .gridDiscos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "logo" "nav" "disco" "discos" "footer"; }
+  header {
+    grid-area: logo; }
+  nav {
+    grid-area: nav; }
+  section.discos {
+    grid-area: disco;
+    display: flex;
+    flex-direction: column; }
+  section.discos img {
+    padding: 10px; }
+  main.discografia {
+    grid-area: discos; }
+  .gridDiscos_Especifica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; }
+  .gridDiscos_Especifica div img {
+    padding: 10px; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  background-color: #730014; }
+
+nav ul li {
+  padding: 0px 10px 0px 10px; }
+
+header {
+  background-color: black; }
+
+a {
+  text-decoration: none; }
+  a:link {
+    color: #F0F0F0; }
+  a:visited {
+    color: #F0F0F0; }
+
+ul {
+  list-style: none; }
+
+.imgAlbum {
+  border: black 10px solid; }
+
+.conciertos__mapa__iframe {
+  border: black 10px solid; }
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 175vh;
+  width: 100%; }
+
+.principal__gif {
+  background-image: url(../assets/1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.principal__nuevoAlbum__portada {
+  padding: 0px 0px 100px 0px; }
+
+section.conciertos {
+  background-image: linear-gradient(#2D0003, #FF1F6A, #FF6BB0); }
+
+.mapaTabla {
+  padding: 0px 0px 50px 0px; }
+
 #navbarNav {
-	justify-content: end;
-} 
+  justify-content: end; }
 
 iframe {
-	aspect-ratio: auto 500 / 500;
-}
+  aspect-ratio: auto 500 / 500; }
 
 table {
-	background-color: transparent !important;
-}
+  background-color: transparent !important; }
 
-.rrss {
-	display: flex;
-}
-.titulo__sitio {
-	font-weight: 900;
-	font-size: 50px;
-}
-.titulos__paginas {
-	font-weight: 700;
-	font-size: 40px;
-	color:whitesmoke
-}
-.subtitulos__paginas {
-	font-weight: 400;
-	font-size: 30px;
-	color:whitesmoke
-}
-.contenido__grande {
-	font-weight: 700;
-	font-size: 20px;
-}
-.contenido__chico {
-	font-weight: 400;
-	font-size: 20px;
-	text-align: justify;
-	color: white;
-}
-#sinFondo {
-	background-color: transparent !important;
-}
-body {
-	font-family: 'Montserrat', sans-serif;
-	color: black;
-	background-color:gray;
-}
-footer {
-	display: flex;
-	justify-content: space-between;
-	padding: 40px;
-	background-color:#730014;
-	align-items: center;
-}
-nav ul li {
-	padding: 0px 10px 0px 10px;
-}
-header {
-	background-color:black;
-}
-a {
-	text-decoration: none;
-}
-a:link {
-	color:white
-}
-a:visited {
-	color:white
-}
-ul {
-	list-style: none;
-}
-/* fin de estilo para varias paginas */
-.imgAlbum {
-	border: black 10px solid;
-}
-.conciertos__mapa__iframe {
-	border: black 10px solid;
-}
-.principal {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	height: 175vh;
-	width: 100%;
-}
-.principal__gif {
-	background-image: url(../assets/1920.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-.principal__nuevoAlbum__portada {
-	padding: 0px 0px 100px 0px;
-}
-section.conciertos {
-	background-image: linear-gradient(#2D0003, #FF1F6A, #FF6BB0);
-}
-.mapaTabla {
-	padding: 0px 0px 50px 0px;
-} 
 /* HISTORIA */
-.gridNosotros {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
-	"texto texto texto"
-	"carrusel carrusel carrusel"
-	"footer footer footer"
-}
 .texto {
-	grid-area: texto;
-	background-color: darkblue;
-	display: flex;
-	justify-content: center;
-}
+  display: flex;
+  justify-content: center; }
+
 .carrusel {
-	grid-area: carrusel;
-	background-image: linear-gradient(#00033A, #003CC5, #00B0FF);
-	display: flex;
-	justify-content: center;
-	padding: 60px;
-}
+  background-image: linear-gradient(#00033A, #003CC5, #00B0FF);
+  display: flex;
+  justify-content: center;
+  padding: 60px; }
+
 .historiaContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 0px 70px 20px 70px;
-	height: 155vh;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 70px 20px 70px;
+  height: 155vh; }
+
 .historiaGif {
-	background-image: url(../assets/19202.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
+  background-image: url(../assets/19202.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
 section.historia {
-	background-image: linear-gradient(#00033A, #002792);
-	text-align: center;
-}
+  background-image: linear-gradient(#00033A, #003CC5);
+  text-align: center; }
+
 .historia .titulos__paginas {
-	padding: 20px;
-}
+  padding: 20px; }
+
 /* DISCOGRAFIA */
-.gridDiscos {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "disco disco disco"
-						 "discos discos discos"
-					 	 "footer footer footer";
-}
 section.discos {
-	grid-area: disco;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	padding: 100px 40px 100px 40px;
-	background-image: url(../assets/19232.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-.discografia {
-	grid-area: discos;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 40px 100px 40px;
+  background-image: url(../assets/19232.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; }
+
 .gridDiscos_Especifica div {
-	display: flex;
-	align-items: center;
-}
+  display: flex;
+  align-items: center; }
+
 .tituloDiscos {
-	background-color: #000600;
-	text-align: center;
-	padding: 20px;
-}
-.gridDiscos_Especifica {
-	background-image:linear-gradient(#000600, #009700, #FFD524);
-	padding: 60px 100px 60px 20px;
-	display: grid;
-	gap: 20px;
-	grid-template-columns: 25% 50% 25%;
-	grid-template-rows: 50px 160px 50px 50px 160px 50px 50px 160px 50px;
-	grid-template-areas: 
-	"imagen titulo redes"
-	"imagen descrip descrip"
-	"imagen repro repro"
-		"imagen2 titulo2 redes2"
-		"imagen2 descrip2 descrip2"
-		"imagen2 repro2 repro2"
-	"imagen3 titulo3 redes3"
-	"imagen3 descrip3 descrip3"
-	"imagen3 repro3 repro3";
-}
-.gridDiscos_Titulo {
-	grid-area: titulo;
-}
-.gridDiscos_Titulo2 {
-	grid-area: titulo2;
-}
-.gridDiscos_Titulo3 {
-	grid-area: titulo3;
-}
-.gridDiscos_Imagen {
-	grid-area: imagen;
-	justify-content: center;
-	padding: 0px 0px 0px 0px;
-}
-.gridDiscos_Imagen2 {
-	grid-area: imagen2;
-	justify-content: center;
-}
-.gridDiscos_Imagen3 {
-	grid-area: imagen3;
-	justify-content: center;
-}
-.gridDiscos_Descripcion {
-	grid-area: descrip;
-}
-.gridDiscos_Descripcion2 {
-	grid-area: descrip2;
-}
-.gridDiscos_Descripcion3 {
-	grid-area: descrip3;
-}
-.gridDiscos_Redes {
-	grid-area: redes;
-}
-.gridDiscos_Redes2 {
-	grid-area: redes2;
-}
-.gridDiscos_Redes3 {
-	grid-area: redes3;
-}
+  background-color: #000600;
+  text-align: center;
+  padding: 20px; }
+
 /* GALERIA */
 .galeria {
-	padding: 20px 0px 0px 0px;
-}	
-.galeriaFondo {	
-	background-image: linear-gradient(#FFD72E, #FFD873, #FFD7AA);
-}
+  padding: 20px 0px 0px 0px; }
+
+.galeriaFondo {
+  background-image: linear-gradient(#FFD524, #FFD873, #FFD7AA); }
+
 .col-lg-4, .col-md-6, .col-sm-12 {
-	margin: 0 !important;
-	padding: 25px;
-}
+  margin: 0 !important;
+  padding: 25px; }
+
 .container .row div img:hover {
-	border: 5px solid white;
-}
+  border: 5px solid white; }
+
 .container .row div img {
-	width: 100%;
-	height: 330px;
-}
+  width: 100%;
+  height: 330px; }
+
 /* CONTACTO */
+#sinFondo {
+  background-color: transparent !important; }
+
 .contacto__fondo {
-	background-image: url(../assets/contactofondo.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-}
+  background-image: url(../assets/contactofondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
 .gridContacto {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: 
-	"contacto contacto contacto"
-	"footer footer footer";
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "contacto contacto contacto" "footer footer footer"; }
+
 .mainContacto {
-	grid-area: contacto;
-}
+  grid-area: contacto; }
+
 .formulariosection {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 80vh;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; }
+
 footer {
-	grid-area: footer;
-}
+  grid-area: footer; }
+
 .formulario {
-	font-weight: 400;
-	font-size: 25px;
-	text-align: center;
-}
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center; }
+
 .formulario__fondo {
-	background-color: white;
-}
+  background-color: white; }
+
 .rrss a {
-	padding: 10px;
-}
-/* media querie !!!!! */
-@media only screen and (min-width: 0px) and (max-width: 768px){
-/* historia */
-	.gridNosotros {
-		display: grid;
-		grid-template-rows: 2000px 610px 100px;
-		grid-template-columns: 100%;
-		grid-template-areas: 
-		"texto"
-		"carrusel"
-		"footer"
-	}
-	footer {
-		grid-area: footer;
-		padding: 0px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.texto {
-		grid-area: texto;
-		background-color: darkblue;
-		display: flex;
-		justify-content: center;
-	}
-	.parrafo {
-		width: 100%;
-		height: auto;
-	}
-	.historiaContainer {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-		padding: 0px 70px 20px 70px;
-		height: 310vh;
-	}
-	.historiaGif {
-		background-image: url(../assets/19202.jpg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	section.historia {
-		background-color: black;
-		text-align: center;
-	}
-	.historia .titulos__paginas {
-		padding: 20px;
-	}
- /* discos */
-	.gridDiscos {
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-areas: 
-		"logo"
-		"nav"
-		"disco"
-		"discos"
-		"footer";	
-	}
-	footer {
-		grid-area: footer;
-		padding: 20px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-	header {
-		grid-area: logo;
-	}
-	nav {
-		grid-area: nav;
-	}
-	section.discos {
-		grid-area: disco;
-		display: flex;
-		flex-direction: column;
-	}
+  padding: 10px; }
 
-	section.discos img {
-		padding: 10px;
-	}
-	main.discografia {
-		grid-area: discos;
-	}
+.rrss {
+  display: flex; }
 
-	.gridDiscos_Especifica {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-	.gridDiscos_Especifica div img {
-		padding: 10px;
-	}
-}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #730014;
+  align-items: center; }
+
+.gridDiscos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "disco disco disco" "discos discos discos" "footer footer footer"; }
+
+section.discos {
+  grid-area: disco; }
+
+.discografia {
+  grid-area: discos; }
+
+.gridDiscos_Especifica {
+  background-image: linear-gradient(#000600, #009700, #FFD524);
+  padding: 60px 100px 60px 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 50px 160px 50px 50px 160px 50px 50px 160px 50px;
+  grid-template-areas: "imagen titulo redes" "imagen descrip descrip" "imagen repro repro" "imagen2 titulo2 redes2" "imagen2 descrip2 descrip2" "imagen2 repro2 repro2" "imagen3 titulo3 redes3" "imagen3 descrip3 descrip3" "imagen3 repro3 repro3"; }
+
+.gridDiscos_Titulo {
+  grid-area: titulo; }
+
+.gridDiscos_Titulo2 {
+  grid-area: titulo2; }
+
+.gridDiscos_Titulo3 {
+  grid-area: titulo3; }
+
+.gridDiscos_Imagen {
+  grid-area: imagen;
+  justify-content: center;
+  padding: 0px 0px 0px 0px; }
+
+.gridDiscos_Imagen2 {
+  grid-area: imagen2;
+  justify-content: center; }
+
+.gridDiscos_Imagen3 {
+  grid-area: imagen3;
+  justify-content: center; }
+
+.gridDiscos_Descripcion {
+  grid-area: descrip; }
+
+.gridDiscos_Descripcion2 {
+  grid-area: descrip2; }
+
+.gridDiscos_Descripcion3 {
+  grid-area: descrip3; }
+
+.gridDiscos_Redes {
+  grid-area: redes; }
+
+.gridDiscos_Redes2 {
+  grid-area: redes2; }
+
+.gridDiscos_Redes3 {
+  grid-area: redes3; }
+
+/* HISTORIA */
+.gridNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "texto texto texto" "carrusel carrusel carrusel" "footer footer footer"; }
+
+.texto {
+  grid-area: texto; }
+
+.carrusel {
+  grid-area: carrusel; }
+
+.titulo__sitio {
+  font-weight: 900;
+  font-size: 50px; }
+
+.titulos__paginas {
+  font-weight: 700;
+  font-size: 40px;
+  color: #F0F0F0; }
+
+.subtitulos__paginas {
+  font-weight: 400;
+  font-size: 30px;
+  color: #F0F0F0; }
+
+.contenido__grande {
+  font-weight: 700;
+  font-size: 20px; }
+
+.contenido__chico {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  color: white; }

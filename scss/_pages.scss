@@ -1,0 +1,187 @@
+// Index
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	background-color: $BordoFooter;
+}
+nav ul li {
+	padding: 0px 10px 0px 10px;
+}
+header {
+	background-color:black;
+}
+a {
+	text-decoration: none;
+    &:link {
+	color: $NoTanBlanco}
+    &:visited {
+	color: $NoTanBlanco}
+}
+ul {
+	list-style: none;
+}
+.imgAlbum {
+	border: black 10px solid;
+}
+.conciertos__mapa__iframe {
+	border: black 10px solid;
+}
+.principal {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	height: 175vh;
+	width: 100%;
+}
+.principal__gif {
+	background-image: url(../assets/1920.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.principal__nuevoAlbum__portada {
+	padding: 0px 0px 100px 0px;
+}
+section.conciertos {
+	background-image: linear-gradient($GradienteIndex-A, $GradienteIndex-B, $GradienteIndex-C);
+}
+.mapaTabla {
+	padding: 0px 0px 50px 0px;
+}
+#navbarNav {
+	justify-content: end;
+} 
+iframe {
+	aspect-ratio: auto 500 / 500;
+}
+
+table {
+	background-color: transparent !important;
+}
+/* HISTORIA */
+.texto {
+	display: flex;
+	justify-content: center;
+}
+.carrusel {
+	background-image: linear-gradient($GradienteCarousel-A, $GradienteCarousel-B, $GradienteCarousel-C);
+	display: flex;
+	justify-content: center;
+	padding: 60px;
+}
+.historiaContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0px 70px 20px 70px;
+	height: 155vh;
+}
+.historiaGif {
+	background-image: url(../assets/19202.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+section.historia {
+	background-image: linear-gradient($GradienteCarousel-A, $GradienteCarousel-B);
+	text-align: center;
+}
+.historia .titulos__paginas {
+	padding: 20px;
+}
+/* DISCOGRAFIA */
+section.discos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 100px 40px 100px 40px;
+	background-image: url(../assets/19232.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.gridDiscos_Especifica div {
+	display: flex;
+	align-items: center;
+}
+.tituloDiscos {
+	background-color: $NoTanNegro;
+	text-align: center;
+	padding: 20px;
+}
+/* GALERIA */
+.galeria {
+	padding: 20px 0px 0px 0px;
+}	
+.galeriaFondo {	
+	background-image: linear-gradient($GradienteDiscos-B, $GradienteGaleria-A, $GradienteGaleria-B);
+}
+.col-lg-4, .col-md-6, .col-sm-12 {
+	margin: 0 !important;
+	padding: 25px;
+}
+.container .row div img:hover {
+	border: 5px solid white;
+}
+.container .row div img {
+	width: 100%;
+	height: 330px;
+}
+/* CONTACTO */
+#sinFondo {
+	background-color: transparent !important;
+}
+.contacto__fondo {
+	background-image: url(../assets/contactofondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.gridContacto {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"contacto contacto contacto"
+	"footer footer footer";
+}
+.mainContacto {
+	grid-area: contacto;
+}
+.formulariosection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+footer {
+	grid-area: footer;
+}
+.formulario {
+	font-weight: 400;
+	font-size: 25px;
+	text-align: center;
+}
+.formulario__fondo {
+	background-color: white;
+}
+.rrss a {
+	padding: 10px;
+}
+// footer
+.rrss {
+	display: flex;
+}
+footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px;
+	background-color: $BordoFooter;
+	align-items: center;
+}
