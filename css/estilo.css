@@ -1,26 +1,28 @@
 .titulo__sitio {
-  font-weight: 900;
-  font-size: 50px; }
+  color: #F0F0F0;
+  font-size: 50px;
+  font-weight: 900; }
 
 .titulos__paginas {
-  font-weight: 700;
+  color: #F0F0F0;
   font-size: 40px;
-  color: #F0F0F0; }
+  font-weight: 700; }
 
 .subtitulos__paginas {
-  font-weight: 400;
+  color: #F0F0F0;
   font-size: 30px;
-  color: #F0F0F0; }
+  font-weight: 400; }
 
 .contenido__grande {
-  font-weight: 700;
-  font-size: 20px; }
+  color: #F0F0F0;
+  font-size: 20px;
+  font-weight: 700; }
 
 .contenido__chico {
-  font-weight: 400;
+  color: white;
   font-size: 20px;
-  text-align: justify;
-  color: white; }
+  font-weight: 400;
+  text-align: justify; }
 
 /* index */
 body {

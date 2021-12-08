@@ -1,25 +1,34 @@
 // reglas para tipografia
+
+@mixin estiloTipografia($color, $tamanio){
+	color:$color;
+	font-size:$tamanio;
+}
+$grosorLetras:(
+	tituloPrincipal: 900,
+	tituloSecundario: 700,
+	contenidoGrande: 700,
+	subtitulos: 400,
+	contenidoChico: 400
+);
 .titulo__sitio {
-	font-weight: 900;
-	font-size: 50px;
+	@include estiloTipografia($NoTanBlanco, 50px);
+	font-weight: map-get($grosorLetras,tituloPrincipal);
 }
 .titulos__paginas {
-	font-weight: 700;
-	font-size: 40px;
-	color: $NoTanBlanco
+	@include estiloTipografia($NoTanBlanco, 40px);
+	font-weight: map-get($grosorLetras,tituloSecundario);
 }
 .subtitulos__paginas {
-	font-weight: 400;
-	font-size: 30px;
-	color: $NoTanBlanco
+	@include estiloTipografia($NoTanBlanco, 30px);
+	font-weight: map-get($grosorLetras,subtitulos);
 }
 .contenido__grande {
-	font-weight: 700;
-	font-size: 20px;
+	@include estiloTipografia($NoTanBlanco, 20px);
+	font-weight: map-get($grosorLetras,contenidoGrande);
 }
 .contenido__chico {
-	font-weight: 400;
-	font-size: 20px;
+	@include estiloTipografia(white, 20px);
+	font-weight: map-get($grosorLetras,contenidoChico);
 	text-align: justify;
-	color: white;
 }
