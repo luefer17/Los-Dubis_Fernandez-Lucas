@@ -80,11 +80,8 @@ table {
 	height: 155vh;
 }
 .historiaGif {
+	@extend .principal__gif;
 	background-image: url(../assets/19202.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
 }
 section.historia {
 	background-image: linear-gradient($GradienteCarousel-A, $GradienteCarousel-B);
@@ -100,11 +97,8 @@ section.discos {
 	justify-content: space-around;
 	align-items: center;
 	padding: 100px 40px 100px 40px;
+	@extend .principal__gif;
 	background-image: url(../assets/19232.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
 }
 .gridDiscos_Especifica div {
 	display: flex;
