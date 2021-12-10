@@ -44,8 +44,8 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: center;
-		padding: 0px 70px 20px 70px;
-		height: 540vh;
+		padding: 0px 10px 20px 10px;
+		height: 455vh;
 	}
 	.historiaGif {
 		background-image: url(../assets/19202.jpg);
@@ -60,6 +60,10 @@
 	}
 	.historia .titulos__paginas {
 		padding: 20px;
+	}
+	.carousel-item, .carousel-inner {
+		height: 330px;
+		width: 330px;
 	}
  /* discos */
 	.gridDiscos {

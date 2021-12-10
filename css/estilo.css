@@ -61,7 +61,7 @@ ul {
   width: 100%; }
 
 .principal__gif, .historiaGif, section.discos {
-  background-image: url(../assets/1920.jpg);
+  background-image: url(../assets/1920.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -86,6 +86,9 @@ table {
   background-color: transparent !important; }
 
 /* HISTORIA */
+.parrafo {
+  padding: 5px; }
+
 .texto {
   display: flex;
   justify-content: center; }
@@ -96,6 +99,10 @@ table {
   justify-content: center;
   padding: 60px; }
 
+.carousel-item, .carousel-inner {
+  height: 700px;
+  width: 700px; }
+
 .historiaContainer {
   display: flex;
   flex-direction: column;
@@ -105,7 +112,7 @@ table {
   height: 155vh; }
 
 .historiaGif {
-  background-image: url(../assets/19202.jpg); }
+  background-image: url(../assets/19202.png); }
 
 section.historia {
   background-image: linear-gradient(#00033A, #003CC5);
@@ -307,8 +314,8 @@ section.discos {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px 70px 20px 70px;
-    height: 540vh; }
+    padding: 0px 10px 20px 10px;
+    height: 455vh; }
   .historiaGif {
     background-image: url(../assets/19202.jpg);
     background-repeat: no-repeat;
@@ -320,6 +327,9 @@ section.discos {
     text-align: center; }
   .historia .titulos__paginas {
     padding: 20px; }
+  .carousel-item, .carousel-inner {
+    height: 330px;
+    width: 330px; }
   /* discos */
   .gridDiscos {
     display: grid;

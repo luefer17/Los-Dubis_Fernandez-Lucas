@@ -35,7 +35,7 @@ ul {
 	width: 100%;
 }
 .principal__gif {
-	background-image: url(../assets/1920.jpg);
+	background-image: url(../assets/1920.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -61,6 +61,9 @@ table {
 	background-color: transparent !important;
 }
 /* HISTORIA */
+.parrafo {
+	padding: 5px;
+}
 .texto {
 	display: flex;
 	justify-content: center;
@@ -70,6 +73,10 @@ table {
 	display: flex;
 	justify-content: center;
 	padding: 60px;
+}
+.carousel-item, .carousel-inner {
+	height: 700px;
+	width: 700px;
 }
 .historiaContainer {
 	display: flex;
@@ -81,7 +88,7 @@ table {
 }
 .historiaGif {
 	@extend .principal__gif;
-	background-image: url(../assets/19202.jpg);
+	background-image: url(../assets/19202.png);
 }
 section.historia {
 	background-image: linear-gradient($GradienteCarousel-A, $GradienteCarousel-B);
